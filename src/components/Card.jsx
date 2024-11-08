@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Card = ({coffee}) => {
     const {name , image, category, id, type, origin, rating, popularity } = coffee || {}
     return (
-        <div className='flex relative'>
+        <div className='flex relative mx-5'>
             <Link to={`/coffee/${id}`} className='transition hover:scale-105 shadow-xl rounded-xl overflow-hidden'>
             <figure className='w-full h-48 overflow-hidden'>
                 <img src={image} alt="" />

@@ -25,7 +25,7 @@ const CoffeeCards = () => {
           <Card key={coffee.id} coffee={coffee} />
         ))}
       </div>
-      <button className="btn btn-warning" onClick={()=> navigate('/coffees')}>View All</button>
+      <button className="btn btn-warning ml-5" onClick={()=> navigate('/coffees')}>View All</button>
     </>
   );
 };
