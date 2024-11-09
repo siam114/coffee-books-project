@@ -13,7 +13,7 @@ const CoffeeDetails = () => {
 
     const handleFavorite = (coffee) =>{
         addFavorite(coffee);
-        setIsFavorite(true)
+        setIsFavorite(true);
     }
 
     useEffect(()=>{
@@ -22,7 +22,7 @@ const CoffeeDetails = () => {
         const favorite = getAllFavorite();
         const isExist = favorite.find(item => item.id == singleData.id);
         if(isExist){
-            setIsFavorite(true)
+            setIsFavorite(true);
         }
 
     },[data, id])
